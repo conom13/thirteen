@@ -50,7 +50,7 @@ class Bin
 
     private function isEu(string $countryIndex = ''): bool
     {
-	return (boolean) in_array($countryIndex, $this->euIndexes);
+	return in_array($countryIndex, $this->euIndexes);
     }
 
 }
