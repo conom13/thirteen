@@ -51,7 +51,7 @@ class RequestFromInput implements Request
 	return $this->ceilingValue($commision, 2);
     }
     
-    public function ceilingValue(float $val = 0, int $decimal = 2) : float
+    public function ceilingValue(float $val = 0, int $decimal = 2): float
     {
 	$pow = pow(10, $decimal);
 	return ( ceil($pow * $val) + ceil($pow * $val - ceil($pow * $val)) ) / $pow;
